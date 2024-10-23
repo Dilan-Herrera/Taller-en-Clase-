@@ -25,8 +25,18 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Equipoes" asp-action="Index">Equipos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Estadios" asp-action="Index">Estadios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Jugadors" asp-action="Index">Jugadores</a>
+                        </li>
                     </ul>
                 </div>
+                <img src="~/imagenes/logos_5ta._estrella_i.png" />
             </div>
         </nav>
     </header>
@@ -35,7 +45,6 @@
             @RenderBody()
         </main>
     </div>
-
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2024 - Taller_en_Clase - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
