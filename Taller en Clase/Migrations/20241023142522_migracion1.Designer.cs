@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Taller_en_Clase.Data;
 
@@ -11,9 +12,11 @@ using Taller_en_Clase.Data;
 namespace Taller_en_Clase.Migrations
 {
     [DbContext(typeof(Taller_en_ClaseContext))]
-    partial class Taller_en_ClaseContextModelSnapshot : ModelSnapshot
+    [Migration("20241023142522_migracion1")]
+    partial class migracion1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
